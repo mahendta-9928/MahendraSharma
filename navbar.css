@@ -1,0 +1,499 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background: #ffffff;
+    margin: 0;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    /* padding: 30px; */
+
+}
+
+nav {
+    position: relative;
+    position: fixed;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    height: 37px;
+    filter: drop-shadow(1px 1px 20px #620a62e4);
+}
+
+nav a {
+    position: relative;
+    color: #fff;
+    padding: 8px 24px;
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.5s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav span {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, #9b0e86e4, #562163);
+    border-radius: 10px;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    width: 85px;
+    z-index: 0;
+}
+
+/* Hover Effect for Sliding Background */
+nav a:nth-child(1):hover~span {
+    left: 0px;
+    width: 85px;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 91px;
+    width: 95px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 183px;
+    width: 95px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 279px;
+    width: 98px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 380px;
+    width: 105px;
+}
+
+section {
+    padding: 0px;
+}
+
+.page1 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+div.MY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.bio {
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 550px;
+    margin-top: 85px;
+    padding: 50px;
+    line-height: 50px;
+}
+
+h1.font {
+
+    font-size: 380%;
+}
+
+h2.font {
+    font-size: 355%;
+}
+
+p.font {
+    color: #940494e4;
+
+}
+
+#btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #940494e4, #551664);
+    border-radius: 40px;
+    border: 2px solid #940494e4;
+    box-shadow: 0 0 10px #940494e4;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ffffff;
+    font-weight: 600;
+    transition: .5s;
+}
+
+#btn:hover {
+    background: transparent;
+    color: #940494e4;
+    box-shadow: none;
+}
+
+img.imgg {
+    width: 450px;
+    margin: -20px;
+}
+
+img.imgg:hover {
+    filter: drop-shadow(1px 1px 20px #940494e4);
+    transition: 0.5s;
+}
+
+.page2 {
+
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+
+h1#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: #562163;
+}
+
+
+div.biodata {
+    display: flex;
+    margin-top: -55px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.data {
+    background: rgb(255, 255, 255);
+    padding-top: 50px;
+    height: 400px;
+    width: 450px;
+    padding: 50px;
+
+
+}
+
+div.big {
+    display: flex;
+    justify-content: center;
+
+}
+
+h1.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+
+p.info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: px;
+    font-size: 18px;
+}
+
+.page3 {
+
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+h1#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: #562163;
+}
+
+div.bar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.progres {
+    /* background: rgb(163, 25, 25); */
+    padding-top: 20px;
+    height: 400px;
+    width: 450px;
+    padding: 70px;
+
+}
+
+
+
+.skill {
+    margin: 10px 0;
+    height: 40px;
+    padding: 4px;
+    padding-top: 9px;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 9px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #5865f2;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+img.imggg {
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* filter: drop-shadow(0.5px 0.5px 10px  #484148e4); */
+}
+
+.page4 {
+
+    height: 115%;
+    width: 100%;
+
+
+}
+
+h1#Project {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: #562163;
+}
+
+.pagephoto {
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.photo {
+    height: 400px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+div.photo1 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+div.photo2 {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+img.img1 {
+    width: 450px;
+    border-radius: 8px;
+    filter: drop-shadow(1px 1px 40px #484148e4);
+}
+
+.page5 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+h1.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: #562163;
+}
+
+div.center {
+
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.names {
+    margin: 25px;
+
+
+
+}
+
+input {
+    border: 2px solid rgb(59, 58, 58);
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold
+}
+
+:placeholder-shown {
+    padding-left: 10px;
+}
+
+div.email {
+    padding: 25px;
+}
+
+div.area {
+    padding: 25px;
+}
+
+div.area input {
+    border: 2px solid rgb(59, 58, 58);
+    border-radius: 8px;
+    height: 150px;
+    width: 255px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold
+}
+
+div.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button#btn2 {
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(45deg, #940494e4, #551664);
+    border-radius: 8px;
+    border: 2px solid #940494e4;
+    box-shadow: 0 0 10px #940494e4;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn2:hover {
+    background: transparent;
+    color: #940494e4;
+    box-shadow: none;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+    height: 240px;
+    padding: 20px 20px 10px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-container h3,
+.footer-container h4 {
+    margin-bottom: 10px;
+}
+
+.footer-left,
+.footer-center {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.footer-right {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-center ul li a:hover {
+    color: #fff;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
